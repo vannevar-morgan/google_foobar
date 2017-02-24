@@ -7,7 +7,7 @@ Note that solution7.py is the final solution submitted.
 
 solution6 is also correct but solution7 is more polished.
 
-The only difference between solution4 and solution5 is solution5 switches to python2.7 instead of python3.4
+The only difference between solution4 and solution5 is solution5 switches to python2.7 instead of python3.4.
 
 (I develop in python3.x locally but code on google foobar runs in a python2.7 sandbox.  solution4.py will give the correct answers running as python3.x.)
 
@@ -40,9 +40,7 @@ First, you should observe that this problem probably relies on some mathematical
 Generally you'll find that the area you calculate for the test cases is greater than but very close to the correct value.  It should also be obvious that points on the edges (with integer coordinates) are also involved, subtracted in some way from the area.  You can see what I tried (just guessing) in solutions 1-3 before I found Pick's Theorem.
 
 Try searches describing the problem:
-
 "count points in a triangle with constraint that no points lie on the perimeter"
-
 "count points interior to a triangle"
 
 Eventually you'll find your way to Pick's Theorem.
