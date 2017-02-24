@@ -13,7 +13,9 @@ The only difference between solution4 and solution5 is solution5 switches to pyt
 
 solution5 yields wrong answers because the switch to python2.7 means '/' is integer division.  solution6 fixes this with:
 
-`from __future__ import division`
+```python
+from __future__ import division
+```
 
 which must be the first import statement.
 
@@ -42,6 +44,7 @@ Generally you'll find that the area you calculate for the test cases is greater 
 Try searches describing the problem:
 
 `"count points in a triangle with constraint that no points lie on the perimeter"`
+
 `"count points interior to a triangle"`
 
 
