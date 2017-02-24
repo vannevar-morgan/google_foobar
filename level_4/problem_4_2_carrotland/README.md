@@ -9,11 +9,11 @@ solution6 is also correct but solution7 is more polished.
 
 The only difference between solution4 and solution5 is solution5 switches to python2.7 instead of python3.4
 
-I develop in python3.x locally, code on google foobar runs in a python2.7 sandbox.  solution4.py will give the correct answers running as python3.x
+(I develop in python3.x locally but code on google foobar runs in a python2.7 sandbox.  solution4.py will give the correct answers running as python3.x.)
 
 solution5 yields wrong answers because the switch to python2.7 means '/' is integer division.  solution6 fixes this with:
 
-from __future__ import division
+`from __future__ import division`
 
 which must be the first import statement.
 
@@ -46,6 +46,7 @@ Try searches describing the problem:
 Eventually you'll find your way to Pick's Theorem.
 
 You may find these links useful:
+
 http://www.mathopenref.com/coordtrianglearea.html
 
 http://www.had2know.com/academics/triangle-area-perimeter-angle-3-coordinates.html
