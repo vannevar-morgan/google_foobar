@@ -40,10 +40,13 @@ First, you should observe that this problem probably relies on some mathematical
 Generally you'll find that the area you calculate for the test cases is greater than but very close to the correct value.  It should also be obvious that points on the edges (with integer coordinates) are also involved, subtracted in some way from the area.  You can see what I tried (just guessing) in solutions 1-3 before I found Pick's Theorem.
 
 Try searches describing the problem:
+
 "count points in a triangle with constraint that no points lie on the perimeter"
 "count points interior to a triangle"
 
+
 Eventually you'll find your way to Pick's Theorem.
+
 
 You may find these links useful:
 
