@@ -33,14 +33,16 @@ The alt_test_cases are test cases I tested against while solving.  They could be
 
 Solving the Problem
 -------------------
-FYI the key to solving this problem is Pick's Theorem.
+FYI the key to solving this problem is [Pick's Theorem](https://en.wikipedia.org/wiki/Pick%27s_theorem "Pick's Theorem").
 
 First, you should observe that this problem probably relies on some mathematical property.  i.e., if you know this property, you can easily solve this problem.  You know this from the time constraints on the problem - maximum value for a coordinate is 10^9 - if you try to scan all possible points to check if they're interior to the triangle you won't meet time constraints.  Also, you can observe that the area of the triangle bounds the maximum value of possible points interior to the triangle - because each point must be located at integer coordinates each point has a maximum of 1 unit area associated with it.  Search for a way to calculate the area of a triangle from the vertices of the triangle.
 
 Generally you'll find that the area you calculate for the test cases is greater than but very close to the correct value.  It should also be obvious that points on the edges (with integer coordinates) are also involved, subtracted in some way from the area.  You can see what I tried (just guessing) in solutions 1-3 before I found Pick's Theorem.
 
 Try searches describing the problem:
+
 "count points in a triangle with constraint that no points lie on the perimeter"
+
 "count points interior to a triangle"
 
 Eventually you'll find your way to Pick's Theorem.
