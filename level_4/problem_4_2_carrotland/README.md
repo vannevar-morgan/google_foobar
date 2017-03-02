@@ -72,7 +72,7 @@ https://en.wikipedia.org/wiki/Pick%27s_theorem
 Repository Contents
 -------------------
 * **/solutions 1 - 7** - Attempted solutions to carrotland.
-* **/solution7.py** - Final solution for Carrotland.
+* **/solution7.py** - Final solution for carrotland.
 * **/constraints.txt** - Problem Constraints.
 * **/readme.txt** - Problem Description.
 * **/test_cases** - Test Cases used on google foobar for Carrotland.

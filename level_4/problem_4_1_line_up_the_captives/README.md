@@ -51,7 +51,7 @@ https://en.wikipedia.org/wiki/Analytic_combinatorics
 Repository Contents
 -------------------
 * **/captives.py** - Correct under python3, incorrect under python2.7.6 (differences in the decimal module)
-* **/Answer.java** - Final solution for Carrotland.
+* **/Answer.java** - Final solution for line_up_the_captives.
 * **/definitely_wrong_examples** - Wrong solutions illustrating different approaches tried.
 * **/examples** - Solutions by other people - used as a sanity check (please message if you're the author).
 
