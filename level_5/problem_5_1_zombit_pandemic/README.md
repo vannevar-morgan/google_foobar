@@ -26,6 +26,7 @@ So we can break the problem into three subproblems:
 
 ***
 **NOTE:**
+
 Problem 3 is simply the sum of the sums from solving Problem 2.  If Problem 2 is solved, so is Problem 3.
 
 It should be clear (from previous problems, time constraints, and "count the number of ways...") that some combinatorics will be involved.
@@ -38,9 +39,11 @@ Problem 2 is the most difficult.
 In order to count the number of ways to create each partition (for a given size n), observe that each rabbit warren represented as a graph can have at most 1 cycle.  This is because each rabbit bumps exactly 1 rabbit other than itself.  This means if a cycle forms in a warren, the only way a rabbit can join that warren is by bumping one of the rabbits in the cycle (and so it cannot form a cycle with another rabbit, nor can it bump more than one rabbit to join multiple cycles).  Undirected graphs with at most one cycle are known as pseudoforests.
 
 Reading about pseudoforests is very helpful.
+
 https://en.wikipedia.org/wiki/Pseudoforest
 
 In particular:
+
 https://en.wikipedia.org/wiki/Pseudoforest#Enumeration
 
 ***
@@ -59,17 +62,21 @@ This gives us the total number of ways to create all possible partitions - AKA, 
 ***
 
 Searching for "count number of pseudoforests" I found:
+
 https://math.stackexchange.com/questions/1090498/how-to-calculate-the-expected-maximum-tree-size-in-a-pseudoforest
 
 It's rtheunissen.  I've found his questions before in solving foobar problems.  He's pretty good.  The explanation given by Jacopo Notarstefano is helpful and outlines an algorithm that solves Problem 2.
 
 It links to a second article:
+
 https://math.stackexchange.com/questions/1071564/how-many-good-graphs-of-size-n-are-there
 
 which points to OEIS A000435.
+
 https://oeis.org/A000435
 
 Calculating A000435 directly may lead to rounding errors, from the formulas available it was simpler to calculate as A001864(n) / n
+
 https://oeis.org/A001864
 
 After implementing the algorithm outlined by Jacopo Notarstefano, the only other problems I had were:
@@ -77,6 +84,7 @@ After implementing the algorithm outlined by Jacopo Notarstefano, the only other
 - for values n = 2 and n = 3 the answer will reduce to "2" and "3" respectively.  They need to be in the format "num/den".  I hardcoded it - also a quick fix.
 
 
+***
 You may find these links useful:
 
 https://en.wikipedia.org/wiki/Partition_(number_theory)
