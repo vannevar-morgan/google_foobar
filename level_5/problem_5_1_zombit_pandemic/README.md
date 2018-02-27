@@ -24,7 +24,6 @@ So we can break the problem into three subproblems:
 - Problem 2: Count the number of ways of creating each possible partition.
 - Problem 3: Count the total number of ways of creating ALL possible partitions.
 
-***
 **NOTE:**
 
 Problem 3 is simply the sum of the sums from solving Problem 2.  If Problem 2 is solved, so is Problem 3.
@@ -46,7 +45,6 @@ In particular:
 
 https://en.wikipedia.org/wiki/Pseudoforest#Enumeration
 
-***
 **NOTE:**
 > "A graph is simple if it has no self-loops and no multiple edges with the same endpoints."
 
