@@ -35,7 +35,7 @@ Problem 1 is straightforward.
 Problem 2 is the most difficult.
 ***
 
-In order to count the number of ways to create each partition (for a given size n), observe that each rabbit warren represented as a graph can have at most 1 cycle.  This is because each rabbit bumps exactly 1 rabbit other than itself.  This means if a cycle forms in a warren, the only way a rabbit can join that warren is by bumping one of the rabbits in the cycle (and so it cannot form a cycle with another rabbit, nor can it bump more than one rabbit to join multiple cycles).  Undirected graphs with at most one cycle are known as pseudoforests.
+In order to count the number of ways to create each partition (for a given size, n), observe that each rabbit warren represented as a graph can have at most 1 cycle.  This is because each rabbit bumps exactly 1 rabbit other than itself.  This means if a cycle forms in a warren, the only way a rabbit can join that warren is by bumping one of the rabbits in the cycle (and so it cannot form a cycle with another rabbit, nor can it bump more than one rabbit to join multiple cycles).  Undirected graphs with at most one cycle are known as pseudoforests.
 
 Reading about pseudoforests is very helpful.
 
@@ -45,7 +45,6 @@ In particular:
 
 https://en.wikipedia.org/wiki/Pseudoforest#Enumeration
 
-***
 **NOTE:**
 > "A graph is simple if it has no self-loops and no multiple edges with the same endpoints."
 
