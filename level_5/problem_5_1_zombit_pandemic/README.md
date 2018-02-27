@@ -24,8 +24,8 @@ So we can break the problem into three subproblems:
 - Problem 2: Count the number of ways of creating each possible partition.
 - Problem 3: Count the total number of ways of creating ALL possible partitions.
 
-NOTE:
--------------------
+**NOTE:**
+***
 Problem 3 is simply the sum of the sums from solving Problem 2.  If Problem 2 is solved, so is Problem 3.
 
 It should be clear (from previous problems, time constraints, and "count the number of ways...") that some combinatorics will be involved.
@@ -33,7 +33,7 @@ It should be clear (from previous problems, time constraints, and "count the num
 Problem 1 is straightforward.
 
 Problem 2 is the most difficult.
--------------------
+***
 
 In order to count the number of ways to create each partition (for a given size n), observe that each rabbit warren represented as a graph can have at most 1 cycle.  This is because each rabbit bumps exactly 1 rabbit other than itself.  This means if a cycle forms in a warren, the only way a rabbit can join that warren is by bumping one of the rabbits in the cycle (and so it cannot form a cycle with another rabbit, nor can it bump more than one rabbit to join multiple cycles).  Undirected graphs with at most one cycle are known as pseudoforests.
 
@@ -43,8 +43,8 @@ https://en.wikipedia.org/wiki/Pseudoforest
 In particular:
 https://en.wikipedia.org/wiki/Pseudoforest#Enumeration
 
-NOTE:
--------------------
+**NOTE:**
+***
 > "A graph is simple if it has no self-loops and no multiple edges with the same endpoints."
 
 does not hold true for rabbit warrens because we can have multiple edges with the same endpoints, such as:
@@ -56,7 +56,7 @@ B->A
 > "If self-loops are not allowed, the number of maximal directed pseudoforests is instead `(n-1)^n`."
 
 This gives us the total number of ways to create all possible partitions - AKA, Problem 3.
--------------------
+***
 
 Searching for "count number of pseudoforests" I found:
 https://math.stackexchange.com/questions/1090498/how-to-calculate-the-expected-maximum-tree-size-in-a-pseudoforest
@@ -101,7 +101,7 @@ https://math.stackexchange.com/questions/202554/how-do-i-compute-binomial-coeffi
 
 https://stackoverflow.com/questions/18503096/python-integer-partitioning-with-given-k-partitions
 
-I also suggest checking out the last link and rtheunissen's solution.  The last link details a generating function for generating the partitions which is better than my dp approach.  rtheunissen also used a generating function.
+**I also suggest checking out the last link and rtheunissen's solution.  The last link details a generating function for generating the partitions which is better than my dp approach.  rtheunissen also used a generating function.**
 
 
 
